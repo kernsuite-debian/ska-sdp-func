@@ -1,0 +1,35 @@
+*.DS_Store
+*~
+.vscode/
+.venv/
+
+# Build directories
+/release/
+/debug/
+/build/
+/dist/
+/wheelhouse/
+__pycache__/
+*.egg-info/
+poetry.lock
+
+# Documentation build directories
+/docs/doxygen/
+/docs/build/
+
+# Backup files
+*~
+
+# Test data
+*.bin
+*.npy
+test_*.png
+tests/test_data/
+
+# Make files
+Makefile
+CMakeFiles/
+CMakeCache.txt
+
+# Version file
+sdp_func_version.h
