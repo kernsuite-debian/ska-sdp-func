@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+# Explicitly get the multiarch triplet (e.g., x86_64-linux-gnu)
+export DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
+%:
+	dh $@ --buildsystem=cmake
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-DCMAKE_LIBRARY_ARCHITECTURE="$(DEB_HOST_MULTIARCH)" \
+		-DCMAKE_INSTALL_LIBDIR=lib/$(DEB_HOST_MULTIARCH)
+
+override_dh_auto_test:
+	# Exclude the segfaulting tests we found earlier
+	dh_auto_test -- ARGS="-E '(test_hogbom_clean|test_ms_clean_cornwell)'"

@@ -1,0 +1,6 @@
+version=4
+opts=\
+  filenamemangle=s/.*\/archive\/v?([\d\.]+)\/.*\.tar\.gz/ska-sdp-func-$1.tar.gz/,\
+  uversionmangle=s/(\d)[_\.\-]?(rc|pre|dev|beta|alpha)[_\.\-]?(\d*)/$1~$2$3/ \
+  https://gitlab.com/ska-telescope/sdp/ska-sdp-func/-/tags \
+  archive/v?([\d\.]+)\/.*\.tar\.gz

@@ -1,0 +1,437 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: ska-sdp-func
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     .clang-tidy
+           .flake8
+           .gitignore
+           .gitlab-ci.yml
+           .gitmodules
+           .make-support
+           .readthedocs.yaml
+           .release
+           CHANGELOG.md
+           CMakeLists.txt
+           CODEOWNERS
+           Makefile
+           README.md
+           cmake/FindSKA_SDP_FUNC.cmake
+           cmake/compiler_options.cmake
+           cmake/modules/FindCFITSIO.cmake
+           cmake/modules/FindSphinx.cmake
+           cmake/modules/fix_coverage.py
+           cmake/sdp_func_macros.cmake
+           cmake/sdp_func_version.h.in
+           cmake/set_version.cmake
+           cmake/ska-sdp-funcConfig.cmake.in
+           conan/ska-sdp-func/conanfile.py
+           docs/Doxyfile
+           docs/Makefile
+           docs/src/_static/css/custom.css
+           docs/src/_static/img/favicon.ico
+           docs/src/_static/img/favicon_mono.ico
+           docs/src/_static/img/logo.png
+           docs/src/_static/js/github.js
+           docs/src/_templates/breadcrumbs.html
+           docs/src/_templates/layout.html
+           docs/src/_templates/page.html
+           docs/src/adding_new_functions.rst
+           docs/src/changelog.rst
+           docs/src/conf.py
+           docs/src/data_models.rst
+           docs/src/errors.rst
+           docs/src/how_to_contribute.rst
+           docs/src/how_to_pass_CICD_pipeline.rst
+           docs/src/index.rst
+           docs/src/install.rst
+           docs/src/kernels.rst
+           docs/src/logging.rst
+           docs/src/mem.rst
+           docs/src/module_clean/deconvolution.rst
+           docs/src/module_clean/index.rst
+           docs/src/module_examples/function_example_a.rst
+           docs/src/module_examples/index.rst
+           docs/src/module_examples/vector.rst
+           docs/src/module_fourier_transforms/fft.rst
+           docs/src/module_fourier_transforms/index.rst
+           docs/src/module_fourier_transforms/swiftly.rst
+           docs/src/module_grid_data/degrid_uvw_custom.rst
+           docs/src/module_grid_data/gridder_utils.rst
+           docs/src/module_grid_data/gridder_uvw_es_fft.rst
+           docs/src/module_grid_data/gridder_wstack_wtower.rst
+           docs/src/module_grid_data/gridder_wtower_uvw.rst
+           docs/src/module_grid_data/index.rst
+           docs/src/module_rfi/index.rst
+           docs/src/module_rfi/sum_threshold_rfi_flagger.rst
+           docs/src/module_station_beam/aperture_array.rst
+           docs/src/module_station_beam/index.rst
+           docs/src/module_visibility/dft.rst
+           docs/src/module_visibility/flagger.rst
+           docs/src/module_visibility/index.rst
+           docs/src/module_visibility/phase_rotation.rst
+           docs/src/module_visibility/weighting.rst
+           docs/src/sky_coord.rst
+           docs/src/timing.rst
+           pylintrc
+           pyproject.toml
+           pytest.ini
+           scripts/build-wheels.sh
+           scripts/clang-tidy-to-junit/README.md
+           scripts/clang-tidy-to-junit/clang-tidy-to-junit.py
+           scripts/run-clang-tidy/run-clang-tidy_nocolor
+           setup.py
+           src/CMakeLists.txt
+           src/ska-sdp-func/CMakeLists.txt
+           src/ska-sdp-func/clean/CMakeLists.txt
+           src/ska-sdp-func/clean/sdp_hogbom_clean.cpp
+           src/ska-sdp-func/clean/sdp_hogbom_clean.cu
+           src/ska-sdp-func/clean/sdp_hogbom_clean.h
+           src/ska-sdp-func/clean/sdp_ms_clean_cornwell.cpp
+           src/ska-sdp-func/clean/sdp_ms_clean_cornwell.h
+           src/ska-sdp-func/examples/CMakeLists.txt
+           src/ska-sdp-func/examples/sdp_function_example_a.cpp
+           src/ska-sdp-func/examples/sdp_function_example_a.h
+           src/ska-sdp-func/examples/sdp_vector_add.cpp
+           src/ska-sdp-func/examples/sdp_vector_add.cu
+           src/ska-sdp-func/examples/sdp_vector_add.h
+           src/ska-sdp-func/fourier_transforms/CMakeLists.txt
+           src/ska-sdp-func/fourier_transforms/private_pswf.h
+           src/ska-sdp-func/fourier_transforms/sdp_fft.cpp
+           src/ska-sdp-func/fourier_transforms/sdp_fft.cu
+           src/ska-sdp-func/fourier_transforms/sdp_fft.h
+           src/ska-sdp-func/fourier_transforms/sdp_fft_padded_size.cpp
+           src/ska-sdp-func/fourier_transforms/sdp_fft_padded_size.h
+           src/ska-sdp-func/fourier_transforms/sdp_pswf.cpp
+           src/ska-sdp-func/fourier_transforms/sdp_pswf.h
+           src/ska-sdp-func/fourier_transforms/sdp_swiftly.cpp
+           src/ska-sdp-func/fourier_transforms/sdp_swiftly.h
+           src/ska-sdp-func/grid_data/CMakeLists.txt
+           src/ska-sdp-func/grid_data/sdp_degrid_uvw_custom.cpp
+           src/ska-sdp-func/grid_data/sdp_degrid_uvw_custom.cu
+           src/ska-sdp-func/grid_data/sdp_degrid_uvw_custom.h
+           src/ska-sdp-func/grid_data/sdp_grid_wstack_wtower.cpp
+           src/ska-sdp-func/grid_data/sdp_grid_wstack_wtower.h
+           src/ska-sdp-func/grid_data/sdp_gridder_clamp_channels.cpp
+           src/ska-sdp-func/grid_data/sdp_gridder_clamp_channels.cu
+           src/ska-sdp-func/grid_data/sdp_gridder_clamp_channels.h
+           src/ska-sdp-func/grid_data/sdp_gridder_direct.cpp
+           src/ska-sdp-func/grid_data/sdp_gridder_direct.h
+           src/ska-sdp-func/grid_data/sdp_gridder_grid_correct.cpp
+           src/ska-sdp-func/grid_data/sdp_gridder_grid_correct.cu
+           src/ska-sdp-func/grid_data/sdp_gridder_grid_correct.h
+           src/ska-sdp-func/grid_data/sdp_gridder_utils.cpp
+           src/ska-sdp-func/grid_data/sdp_gridder_utils.cu
+           src/ska-sdp-func/grid_data/sdp_gridder_utils.h
+           src/ska-sdp-func/grid_data/sdp_gridder_uvw_es_fft.cpp
+           src/ska-sdp-func/grid_data/sdp_gridder_uvw_es_fft.h
+           src/ska-sdp-func/grid_data/sdp_gridder_uvw_es_fft_kernels.cu
+           src/ska-sdp-func/grid_data/sdp_gridder_uvw_es_fft_utils.cpp
+           src/ska-sdp-func/grid_data/sdp_gridder_uvw_es_fft_utils.h
+           src/ska-sdp-func/grid_data/sdp_gridder_wtower_height.cpp
+           src/ska-sdp-func/grid_data/sdp_gridder_wtower_height.h
+           src/ska-sdp-func/grid_data/sdp_gridder_wtower_uvw.cpp
+           src/ska-sdp-func/grid_data/sdp_gridder_wtower_uvw.cu
+           src/ska-sdp-func/grid_data/sdp_gridder_wtower_uvw.h
+           src/ska-sdp-func/math/sdp_legendre_polynomial.h
+           src/ska-sdp-func/math/sdp_math_macros.h
+           src/ska-sdp-func/numeric_functions/CMakeLists.txt
+           src/ska-sdp-func/numeric_functions/sdp_fft_convolution.cpp
+           src/ska-sdp-func/numeric_functions/sdp_fft_convolution.cu
+           src/ska-sdp-func/numeric_functions/sdp_fft_convolution.h
+           src/ska-sdp-func/rfi/CMakeLists.txt
+           src/ska-sdp-func/rfi/sdp_rfi_flagger.cpp
+           src/ska-sdp-func/rfi/sdp_rfi_flagger.h
+           src/ska-sdp-func/rfi/sdp_twosm_rfi_flagger.cpp
+           src/ska-sdp-func/rfi/sdp_twosm_rfi_flagger.h
+           src/ska-sdp-func/sdp_func_global.h
+           src/ska-sdp-func/station_beam/CMakeLists.txt
+           src/ska-sdp-func/station_beam/sdp_element_dipole.cpp
+           src/ska-sdp-func/station_beam/sdp_element_dipole.cu
+           src/ska-sdp-func/station_beam/sdp_element_dipole.h
+           src/ska-sdp-func/station_beam/sdp_element_spherical_wave_harp.cpp
+           src/ska-sdp-func/station_beam/sdp_element_spherical_wave_harp.h
+           src/ska-sdp-func/station_beam/sdp_station.cpp
+           src/ska-sdp-func/station_beam/sdp_station.cu
+           src/ska-sdp-func/station_beam/sdp_station.h
+           src/ska-sdp-func/utility/CMakeLists.txt
+           src/ska-sdp-func/utility/README.md
+           src/ska-sdp-func/utility/private_device_wrapper.h
+           src/ska-sdp-func/utility/sdp_cuda_atomics.h
+           src/ska-sdp-func/utility/sdp_data_model_checks.c
+           src/ska-sdp-func/utility/sdp_data_model_checks.h
+           src/ska-sdp-func/utility/sdp_device_wrapper.cpp
+           src/ska-sdp-func/utility/sdp_device_wrapper.h
+           src/ska-sdp-func/utility/sdp_errors.h
+           src/ska-sdp-func/utility/sdp_logging.c
+           src/ska-sdp-func/utility/sdp_logging.h
+           src/ska-sdp-func/utility/sdp_mem.cpp
+           src/ska-sdp-func/utility/sdp_mem.cu
+           src/ska-sdp-func/utility/sdp_mem.h
+           src/ska-sdp-func/utility/sdp_mem_view.h
+           src/ska-sdp-func/utility/sdp_sky_coord.c
+           src/ska-sdp-func/utility/sdp_sky_coord.h
+           src/ska-sdp-func/utility/sdp_thread_support.cpp
+           src/ska-sdp-func/utility/sdp_thread_support.h
+           src/ska-sdp-func/utility/sdp_timer.cpp
+           src/ska-sdp-func/utility/sdp_timer.h
+           src/ska-sdp-func/visibility/CMakeLists.txt
+           src/ska-sdp-func/visibility/sdp_dft.cpp
+           src/ska-sdp-func/visibility/sdp_dft.cu
+           src/ska-sdp-func/visibility/sdp_dft.h
+           src/ska-sdp-func/visibility/sdp_flagger.cpp
+           src/ska-sdp-func/visibility/sdp_flagger.h
+           src/ska-sdp-func/visibility/sdp_opt_weighting.cpp
+           src/ska-sdp-func/visibility/sdp_opt_weighting.cu
+           src/ska-sdp-func/visibility/sdp_opt_weighting.h
+           src/ska-sdp-func/visibility/sdp_phase_rotate.cpp
+           src/ska-sdp-func/visibility/sdp_phase_rotate.cu
+           src/ska-sdp-func/visibility/sdp_phase_rotate.h
+           src/ska-sdp-func/visibility/sdp_tiled_functions.cpp
+           src/ska-sdp-func/visibility/sdp_tiled_functions.cu
+           src/ska-sdp-func/visibility/sdp_tiled_functions.h
+           src/ska-sdp-func/visibility/sdp_weighting.cpp
+           src/ska-sdp-func/visibility/sdp_weighting.cu
+           src/ska-sdp-func/visibility/sdp_weighting.h
+           src/ska_sdp_func/__init__.py
+           src/ska_sdp_func/clean/__init__.py
+           src/ska_sdp_func/clean/hogbom_clean.py
+           src/ska_sdp_func/clean/ms_clean_cornwell.py
+           src/ska_sdp_func/examples/__init__.py
+           src/ska_sdp_func/examples/function_example_a.py
+           src/ska_sdp_func/examples/vector.py
+           src/ska_sdp_func/fourier_transforms/__init__.py
+           src/ska_sdp_func/fourier_transforms/fft.py
+           src/ska_sdp_func/fourier_transforms/swiftly.py
+           src/ska_sdp_func/grid_data/__init__.py
+           src/ska_sdp_func/grid_data/degrid_uvw_custom.py
+           src/ska_sdp_func/grid_data/grid_wstack_wtower.py
+           src/ska_sdp_func/grid_data/gridder_direct.py
+           src/ska_sdp_func/grid_data/gridder_utils.py
+           src/ska_sdp_func/grid_data/gridder_uvw_es_fft.py
+           src/ska_sdp_func/grid_data/gridder_wtower_uvw.py
+           src/ska_sdp_func/numeric_functions/__init__.py
+           src/ska_sdp_func/numeric_functions/fft_convolution.py
+           src/ska_sdp_func/rfi/__init__.py
+           src/ska_sdp_func/rfi/rfi_flagger.py
+           src/ska_sdp_func/rfi/twosm_rfi_flagger.py
+           src/ska_sdp_func/station_beam/__init__.py
+           src/ska_sdp_func/station_beam/element.py
+           src/ska_sdp_func/station_beam/station.py
+           src/ska_sdp_func/utility/__init__.py
+           src/ska_sdp_func/utility/error_checking.py
+           src/ska_sdp_func/utility/lib.py
+           src/ska_sdp_func/utility/mem.py
+           src/ska_sdp_func/utility/sky_coord.py
+           src/ska_sdp_func/utility/struct_wrapper.py
+           src/ska_sdp_func/visibility/__init__.py
+           src/ska_sdp_func/visibility/dft.py
+           src/ska_sdp_func/visibility/flagger.py
+           src/ska_sdp_func/visibility/opt_weighting.py
+           src/ska_sdp_func/visibility/phase_rotate.py
+           src/ska_sdp_func/visibility/tiled_functions.py
+           src/ska_sdp_func/visibility/weighting.py
+           tests/CMakeLists.txt
+           tests/__init__.py
+           tests/clean/CMakeLists.txt
+           tests/clean/test_hogbom_clean.cpp
+           tests/clean/test_hogbom_clean.py
+           tests/clean/test_ms_clean_cornwell.cpp
+           tests/clean/test_ms_clean_cornwell.py
+           tests/examples/CMakeLists.txt
+           tests/examples/test_function_example_a.cpp
+           tests/examples/test_function_example_a.py
+           tests/examples/test_vector_add.cpp
+           tests/examples/test_vector_add.py
+           tests/fourier_transforms/CMakeLists.txt
+           tests/fourier_transforms/helpers.py
+           tests/fourier_transforms/test_fft.cpp
+           tests/fourier_transforms/test_fft.py
+           tests/fourier_transforms/test_pswf.cpp
+           tests/fourier_transforms/test_swiftly.cpp
+           tests/fourier_transforms/test_swiftly.py
+           tests/fourier_transforms/test_swiftly_bench.py
+           tests/grid_data/CMakeLists.txt
+           tests/grid_data/test_degrid_uvw_custom.cpp
+           tests/grid_data/test_degrid_uvw_custom.py
+           tests/grid_data/test_gridder_direct.py
+           tests/grid_data/test_gridder_uvw_es_fft.cpp
+           tests/grid_data/test_gridder_uvw_es_fft.py
+           tests/grid_data/test_gridder_wtower_uvw.cpp
+           tests/grid_data/test_gridder_wtower_uvw.py
+           tests/numeric_functions/CMakeLists.txt
+           tests/numeric_functions/test_fft_convolution.cpp
+           tests/numeric_functions/test_fft_convolution.py
+           tests/rfi/CMakeLists.txt
+           tests/rfi/test_rfi_flagger.cpp
+           tests/rfi/test_rfi_flagger.py
+           tests/rfi/test_twosm_rfi_flagger.cpp
+           tests/rfi/test_twosm_rfi_flagger.py
+           tests/station_beam/CMakeLists.txt
+           tests/station_beam/test_element_beam.py
+           tests/station_beam/test_element_dipole.cpp
+           tests/station_beam/test_element_spherical_wave_harp.cpp
+           tests/station_beam/test_station_beam.cpp
+           tests/station_beam/test_station_beam.py
+           tests/utility/CMakeLists.txt
+           tests/utility/test_sky_coord.py
+           tests/visibility/CMakeLists.txt
+           tests/visibility/test_dft.cpp
+           tests/visibility/test_dft.py
+           tests/visibility/test_flagger.py
+           tests/visibility/test_opt_weighting.py
+           tests/visibility/test_phase_rotate.cpp
+           tests/visibility/test_phase_rotate.py
+           tests/visibility/test_tiled_functions.py
+           tests/visibility/test_weighting.cpp
+           tests/visibility/test_weighting.py
+           uncrustify.cfg
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     cmake/modules/lcov_cobertura.py
+Copyright: 2011-2012 Eric Wendelin
+License:   __UNKNOWN__
+ This is free software, licensed under the Apache License, Version 2.0,
+ available in the accompanying LICENSE.txt file.
+
+Files:     cmake/modules/CodeCoverage.cmake
+Copyright: 2012-2017 Lars Bilke
+License:   BSD-3-Clause
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ 3. Neither the name of the copyright holder nor the names of its contributors
+ may be used to endorse or promote products derived from this software without
+ specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ CHANGES:
+ .
+ 2012-01-31, Lars Bilke
+ - Enable Code Coverage
+ .
+ 2013-09-17, Joakim Söderberg
+ - Added support for Clang.
+ - Some additional usage instructions.
+ .
+ 2016-02-03, Lars Bilke
+ - Refactored functions to use named parameters
+ .
+ 2017-06-02, Lars Bilke
+ - Merged with modified version from github.com/ufz/ogs
+ .
+ 2019-05-06, Anatolii Kurotych
+ - Remove unnecessary --coverage flag
+ .
+ 2019-12-13, FeRD (Frank Dana)
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files:     docs/src/license.rst
+Copyright: __NO_COPYRIGHT__ in: docs/src/license.rst
+License:   BSD-3-Clause
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ * Neither the name of the copyright holder nor the names of its contributors may
+ be used to endorse or promote products derived from this software without
+ specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files:     src/ska-sdp-func/fourier_transforms/pocketfft_hdronly.h
+Copyright: 2010-2021 Max-Planck-Society
+           2019-2020 Peter Bell
+License:   BSD-3-Clause
+ For the odd-sized DCT-IV transforms:
+ Copyright (C) 2003, 2007-14 Matteo Frigo
+ Copyright (C) 2003, 2007-14 Massachusetts Institute of Technology
+ .
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ * Neither the name of the copyright holder nor the names of its contributors may
+ be used to endorse or promote products derived from this software without
+ specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         docs/src/_templates/footer.html
+#         docs/src/_static/img/logo.svg
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE
+ Copyright 2022 SKA Organisation
+ Copyright 2022 Fred Dulwich, Andrew Ensor, Anthony Griffin, Seth Hall, Adam Campbell
+ Copyright 2022 University of Oxford
+ .
+ Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+ .
+ 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
